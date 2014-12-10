@@ -1,0 +1,24 @@
+= J. M. Barrie’s _Peter Pan_
+Joel C. Salomon <joelcsalomon@gmail.com>
+
+This is an effort to create good-quality renderings,
+in paper and EPUB,
+of the classic fairy tale.
+
+image:http://i.creativecommons.org/p/mark/1.0/80x15.png[Public Domain Mark,
+link=http://creativecommons.org/publicdomain/zero/1.0/]
+The text is taken from http://www.gutenberg.org/1/16/[Project Gutenberg]
+and (in the U.S.A.) is in the public domain.
+See
+http://en.wikipedia.org/wiki/Peter_and_Wendy#Copyright_status[
+Wikipedia: _Peter and Wendy_: Copyright status]
+for an overview of the text’s legal status in various jurisdictions.
+
+image:http://i.creativecommons.org/p/zero/1.0/88x15.png[CC0,
+link=http://creativecommons.org/publicdomain/mark/1.0/]
+The layout and the LaTeX & HTML/CSS code implementing it may be freely copied.
+
+.Acknowlegements
+The LaTeX code uses
+Peter R. Wilson’s http://ctan.org/pkg/memoir[memoir] class
+and Andrzej Giniewicz’s https://github.com/aginiewicz/createspace[aginiewicz/createspace] package.
