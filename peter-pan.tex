@@ -10,6 +10,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[onlyrm,oldstylenums,largesmallcaps,noamsmath,notextcomp]{kpfonts}
 
+\usepackage{newunicodechar}
 
 \title{Peter Pan}
 \author{J. M. Barrie}
@@ -19,6 +20,9 @@
 \AtBeginDocument{
   \sfcode\csname\encodingdefault\string\textquotedblright\endcsname=0
 }
+
+% Force end-of sentence space; converse of \@
+\newunicodechar{¤}{\spacefactor3000{}}
 
 \newcommand{\theend}{\fancybreak{\scshape{The End}}}
 
