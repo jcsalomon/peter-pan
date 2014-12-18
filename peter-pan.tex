@@ -30,7 +30,7 @@
 \title{Peter Pan}
 \author{J. M. Barrie}
 \newcommand{\thebooktitle}{Peter and Wendy}
-\newcommand{\theplaytitle}{The Boy Who Would Not Grow Up}
+\newcommand{\theplaytitle}{The Boy Who Wouldn’t Grow Up}
 
 % See ‹http://tex.stackexchange.com/questions/59390/spacefactor-unicode-curly-quotes/2966›
 \AtBeginDocument{
@@ -44,6 +44,8 @@
 \usepackage{hyphenat}
 \newunicodechar{‐}{\hyp}
 
+% Chapter headings
+% TODO: Find a way to make act and scene headings look similar
 \chapterstyle{thatcher}
 \renewcommand*{\chapnumfont}{\normalfont\otherscshape\MakeTextLowercase}
 \renewcommand*{\chaptitlefont}{\normalfont}
@@ -81,8 +83,6 @@
 \include{ch16-return-home}
 \include{ch17-when-wendy-grew-up}
 
-\theend
-
 \book[\theplaytitle]{\thetitle\\\emph{or}\\\theplaytitle}
 
 \include{production-notes}
@@ -95,8 +95,6 @@
 \include{act4-home-underground}
 \include{act5-s1-the-pirate-ship}
 \include{act5-s2-nursery-and-tree-tops}
-
-\theend
 
 \backmatter
 
