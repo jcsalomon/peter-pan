@@ -29,7 +29,8 @@
 
 \title{Peter Pan}
 \author{J. M. Barrie}
-\date{}
+\newcommand{\thebooktitle}{Peter and Wendy}
+\newcommand{\theplaytitle}{The Boy Who Would Not Grow Up}
 
 % See ‹http://tex.stackexchange.com/questions/59390/spacefactor-unicode-curly-quotes/2966›
 \AtBeginDocument{
@@ -51,6 +52,8 @@
 
 \renewcommand*{\thefootnote}{\fnsymbol{footnote}}
 
+\usepackage{ccicons}
+
 \begin{document}
 \frontmatter
 
@@ -58,7 +61,7 @@
 
 \mainmatter
 
-\book{Peter and Wendy}
+\book{\thebooktitle}
 
 \include{ch1-peter-breaks-through}
 \include{ch2-the-shadow}
@@ -80,7 +83,7 @@
 
 \theend
 
-\book[The Boy Who Would Not Grow Up]{Peter Pan\\\emph{or}\\The Boy Who Would Not Grow Up}
+\book[\theplaytitle]{\thetitle\\\emph{or}\\\theplaytitle}
 
 \include{production-notes}
 \include{dedication}

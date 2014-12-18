@@ -3,5 +3,66 @@
 % !TEX spellcheck = en_GB
 % !TEX root = peter-pan.tex
 
-\maketitle
+\pagestyle{empty}
+
+% half-title page
+
+\vspace*{\fill}
+\begin{center}
+\HUGE \thetitle
+\end{center}
+\vspace*{\fill}
+\cleardoublepage
+
+% title page
+
+\vspace*{\fill}
+\begin{center}
+\Large\theauthor’s\par
+\HUGE\thetitle
+\end{center}
+\begin{center}\huge\thebooktitle\end{center}
+\begin{center}\huge\emph{\Large and}\end{center}
+\begin{center}\huge\theplaytitle\end{center}
+\vspace*{\fill}
+\clearpage
+
+% copyright page
+
+\begingroup
+\footnotesize
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+
+\ccPublicDomain¤
+The play \emph{\thetitle; or \theplaytitle}, written in 1904 and first published in 1928,
+and the novel \emph{\thebooktitle}, published in 1911,
+have in many jurisdictions entered the public domain;
+in other jurisdictions the copyright is still in effect.
+
+See ‹http://en.wikipedia.org/wiki/Peter\_and\_Wendy\#Copyright\_status›
+for a discussion of the matter.
+
+In 1929 Sir James Barrie assigned the copyright as a gift
+to the Hospital for Sick Children, Great Ormond Street, London
+(now called the Great Ormond Street Hospital).
+In the U.K., the hospital has right to royalty in perpetuity
+for public performance or commercial publication.
+
+See ‹http://gosh.org/peterpan› regarding performance rights
+in the U.K. or where the copyright is still valid.
+
+\ccZero¤
+The \LaTeX\ code implementing the layout of this book,
+or the HTML+CSS code implementing the layout of the EPUB version,
+have been dedicated to the public domain.
+No copyright is asserted.
+
+You may find the code at ‹https://github.com/jcsalomon/peter-pan›.
+
+\endgroup
+\cleardoublepage
+
 \tableofcontents*
+
+\endinput
