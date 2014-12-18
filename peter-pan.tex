@@ -26,6 +26,10 @@
 % Force end-of sentence space; converse of \@
 \newunicodechar{¤}{\spacefactor3000{}}
 
+% Use U+2020 HYPHEN to allow hyphenation within compound words
+\usepackage{hyphenat}
+\newunicodechar{‐}{\hyp}
+
 \chapterstyle{thatcher}
 \renewcommand*{\chapnumfont}{\normalfont\otherscshape\MakeTextLowercase}
 \renewcommand*{\chaptitlefont}{\normalfont}
