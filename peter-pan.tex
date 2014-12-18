@@ -2,8 +2,21 @@
 % !TEX encoding = UTF-8
 % !TEX spellcheck = en_GB
 
-\documentclass[draft, 12pt]{memoir}
-\usepackage[paper=cream]{createspace}
+\documentclass[draft, showtrims, 10pt]{memoir}
+
+\usepackage{calc}
+
+\setstocksize{9in}{6in}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+
+\setlrmarginsandblock{1in}{1in}{*}
+\setulmarginsandblock{1in + \onelineskip}{*}{1}
+
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{\onelineskip}{*}
+
+\checkandfixthelayout[lines]
+
 \usepackage{dramatist}
 
 \usepackage[utf8]{inputenc}
