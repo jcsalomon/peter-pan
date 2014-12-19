@@ -46,9 +46,12 @@
 
 % Chapter headings
 % TODO: Find a way to make act and scene headings look similar
-\chapterstyle{thatcher}
-\renewcommand*{\chapnumfont}{\normalfont\otherscshape\MakeTextLowercase}
-\renewcommand*{\chaptitlefont}{\normalfont}
+\makechapterstyle{pan}{%
+	\chapterstyle{thatcher}
+	\renewcommand*{\chapnumfont}{\normalfont\otherscshape\MakeTextLowercase}
+	\renewcommand*{\chaptitlefont}{\normalfont}
+}
+\chapterstyle{pan}
 
 \newcommand{\theend}{\fancybreak{\scshape{The End}}}
 
