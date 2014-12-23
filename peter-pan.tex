@@ -4,6 +4,38 @@
 
 \documentclass[draft, 10pt]{memoir}
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[light,onlyrm,oldstylenums,largesmallcaps,noamsmath,notextcomp]{kpfonts}
+
+\usepackage[british]{babel}
+
+\usepackage{dramatist}
+
+\usepackage{newunicodechar}
+
+% See ‹http://tex.stackexchange.com/questions/59390/spacefactor-unicode-curly-quotes/2966›
+\AtBeginDocument{
+  \sfcode\csname\encodingdefault\string\textquotedblright\endcsname=0
+}
+
+% Dramatist uses xspace, and we’re using Unicode apostrophes
+\xspaceaddexceptions{’}
+
+% Force end-of sentence space; converse of \@
+\newunicodechar{¤}{\spacefactor3000{}}
+
+% Use U+2020 HYPHEN to allow hyphenation within compound words
+\usepackage{hyphenat}
+\newunicodechar{‐}{\hyp}
+
+% Allow a bit of stretch or line breaking
+% TODO: This ought to become part of the expansion for em dashes,
+%       if only I can figure out how to handle consecutive dashes.
+%       My own xpeek may be useful here; details left till later.
+\newunicodechar{·}{\hspace{0pt plus 2pt}}
+
+% Page Layout
 \usepackage{calc}
 
 \setstocksize{9in}{6in}
@@ -17,34 +49,12 @@
 
 \checkandfixthelayout[lines]
 
-\usepackage{dramatist}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[light,onlyrm,oldstylenums,largesmallcaps,noamsmath,notextcomp]{kpfonts}
-
-\usepackage[british]{babel}
-
-\usepackage{newunicodechar}
-
+% Book metadata
 \title{Peter Pan}
 \author{J. M. Barrie}
 \newcommand{\thebooktitle}{Peter and Wendy}
 \newcommand{\theplaytitle}{The Boy Who Wouldn’t Grow Up}
-
-% See ‹http://tex.stackexchange.com/questions/59390/spacefactor-unicode-curly-quotes/2966›
-\AtBeginDocument{
-  \sfcode\csname\encodingdefault\string\textquotedblright\endcsname=0
-}
-
-% Force end-of sentence space; converse of \@
-\newunicodechar{¤}{\spacefactor3000{}}
-
-% Use U+2020 HYPHEN to allow hyphenation within compound words
-\usepackage{hyphenat}
-\newunicodechar{‐}{\hyp}
-
-\newunicodechar{·}{\hspace{0pt plus 2pt}}
+% TODO: Put this into the PDF metadata as well; see createspace.sty for tips
 
 % Chapter headings
 % TODO: Find a way to make act and scene headings look similar
@@ -55,10 +65,13 @@
 }
 \chapterstyle{pan}
 
+% At the books’ end
 \newcommand{\theend}{\fancybreak{\scshape{The End}}}
 
+% Use footnote symbols
 \renewcommand*{\thefootnote}{\fnsymbol{footnote}}
 
+% For use on the non-copyright page
 \usepackage{ccicons}
 
 \begin{document}
