@@ -21,4 +21,5 @@ The layout and the LaTeX & HTML/CSS code implementing it may be freely copied.
 .Acknowlegements
 The LaTeX code uses
 Peter R. Wilson’s http://ctan.org/pkg/memoir[memoir] class
-and Andrzej Giniewicz’s https://github.com/aginiewicz/createspace[aginiewicz/createspace] package.
+and a pre-release version of
+Massimiliano Dominici’s https://github.com/mlgdominici/dramatist[mlgdominici/dramatist] package.
