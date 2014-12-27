@@ -3,51 +3,80 @@
 % !TEX spellcheck = en_GB
 % !TEX root = peter-pan.tex
 
-\Character[Peter Pan]{PETER}{peter}
-\Character[Tinker Bell]{TINK}{tink}
+\DeclareCharacter[role=Peter Pan,				actor=Miss Nina Boucicault	]{Peter}{peter}
+\DeclareCharacter[role=Mr.\@ Darling,				actor=Mr.\@ Gerald du Maurier	]{Mr.\@ Darling}{mrdarling}
+\DeclareCharacter[role=Mrs.\@ Darling,				actor=Miss Nina Boucicault	]{Mrs.\@ Darling}{mrsdarling}
+\DeclareCharacter[role=Wendy Moira Angela Darling,		actor=Miss Hilda Trevelyan	]{Wendy}{wendy}
+\DeclareCharacter[role=John Napoleon Darling,			actor=Master George Hersee	]{John}{john}
+\DeclareCharacter[role=Michael Nicholas Darling,		actor=Miss Winifred Geoghgan	]{Michael}{michael}
+\DeclareCharacter[role=Nana,					actor=Mr.\@ Arthur Lupino	]{Nana}{nana}
+\DeclareCharacter[role=Tinker Bell,				actor=Miss Jane Wren		]{Tink}{tink}
 
-\Character[Mr.\@ George Darling]{MR.\@ DARLING}{mrdarling}
-\Character[Mrs\@. (Mary) Darling]{MRS.\@ DARLING}{mrsdarling}
-\Character[Wendy Moira Angela Darling]{WENDY}{wendy}
-\Character[John Napoleon Darling]{JOHN}{john}
-\Character[Michael Nicholas Darling]{MICHAEL}{michael}
-\Character[Nana]{NANA}{nana}
-\Character[Liza]{LIZA}{liza}
+\DeclareCharacter[role=Tootles,					actor=Miss Joan Burnett		]{Tootles}{tootles}
+\DeclareCharacter[role=Nibs,					actor=Miss Christine Silver	]{Nibs}{nibs}
+\DeclareCharacter[role=Slightly,				actor=Mr.\@ A. W. Baskcomb	]{Slightly}{slightly}
+\DeclareCharacter[role=Curly,					actor=Miss Alice DuBarry	]{Curly}{curly}
+\DeclareCharacter[role=1st Twin,				actor=Miss Pauline Chase	]{First Twin}{firsttwin}
+\DeclareCharacter[role=2nd Twin,				actor=Miss Phyllis Beadon	]{Second Twin}{secondtwin}
 
-\begin{CharacterGroup}{Lost Boys}
-\GCharacter{Tootles}{TOOTLES}{tootles}
-\GCharacter{Nibs}{NIBS}{nibs}
-\GCharacter{Slightly}{SLIGHTLY}{slightly}
-\GCharacter{Curly}{CURLY}{curly}
-\GCharacter{The Twins}{TWINS}{twins}
-\end{CharacterGroup}
+\DeclareCharacter[role=Jas Hook,	desc=The Pirate Captain,actor=Mr.\@ Gerald du Maurier	]{Hook}{hook}
 
-\Character[Captain Jas.\@ Hook]{HOOK}{hook}
+\DeclareCharacter[role=Smee,					actor=Mr.\@ George Shelton	]{Smee}{smee}
+\DeclareCharacter[role=Gentleman Starkey,			actor=Mr.\@ Sidney Harcourt	]{Starkey}{starkey}
+\DeclareCharacter[role=Cookson,					actor=Mr.\@ Charles Trevor	]{Cookson}{cookson}
+\DeclareCharacter[role=Cecco,					actor=Mr.\@ Frederick Annerley	]{Cecco}{cecco}
+\DeclareCharacter[role=Mullins,					actor=Mr.\@ Hubert Willis	]{Mullins}{mullins}
+\DeclareCharacter[role=Jukes,					actor=Mr.\@ James English	]{Jukes}{jukes}
+\DeclareCharacter[role=Noodler,					actor=Mr.\@ John Kelt		]{Noodler}{noodler}
 
-\begin{CharacterGroup}{Pirates}
-\GCharacter{Smee}{SMEE}{smee}
-\GCharacter{Gentleman Starkey}{STARKEY}{starkey}
-\GCharacter{Cookson}{COOKSON}{cookson}
-\GCharacter{Cecco}{CECCO}{cecco}
-\GCharacter{Mullins}{MULLINS}{mullins}
-\GCharacter{Bill Jukes}{JUKES}{jukes}
-\GCharacter{Noodler}{NOODLER}{noodler}
-\end{CharacterGroup}
+\DeclareCharacter[role=Great Big Little Panther,		actor=Mr.\@ Philip Darwin	]{Panther}{panther}
+\DeclareCharacter[role=Tiger Lily,				actor=Miss Miriam Nesbitt	]{Tiger Lily}{tigerlily}
 
-\begin{CharacterGroup}{Redskins}
-\GCharacter{Great Big Little Panther}{PANTHER}{panther}
-\GCharacter{Tiger Lily}{TIGER LILY}{tigerlily}
-\end{CharacterGroup}
+\DeclareCharacter[role=Liza,		desc=Author of the Play,actor=Ela Q. May		]{Liza}{liza}
 
-\DramPer
+\dramperhead
 
-% Combined in dramatis personæ
-\Character{FIRST TWIN}{firsttwin}
-\Character{SECOND TWIN}{secondtwin}
+\noindent
+The original production of \theauthor’s
+\emph{\thetitle; or, \theplaytitle}
+was at the Duke of York’s Theatre, London, on December 27, 1904,
+under the direction of Mr.\@ Dion Boucicault, Jr.,
+and ran for 145 performances.
+The cast, as originally credited, was as follows:
 
-% Full names &c.
-\Character{PETER PAN}{peterpan}
-\Character{PAN}{pan}
-\Character{TINKER BELL}{tinkerbell}
+\begin{dramper}
+\peterdpentry
+\mrdarlingdpentry
+\mrsdarlingdpentry
+\wendydpentry
+\johndpentry
+\michaeldpentry
+\nanadpentry
+\tinkdpentry
+
+% Members of Peter’s Band
+\tootlesdpentry
+\nibsdpentry
+\slightlydpentry
+\curlydpentry
+\firsttwindpentry
+\secondtwindpentry
+
+\hookdpentry
+% Pirates
+\smeedpentry
+\starkeydpentry
+\cooksondpentry
+\ceccodpentry
+\mullinsdpentry
+\jukesdpentry
+\noodlerdpentry
+
+% Redskins
+\pantherdpentry
+\tigerlilydpentry
+
+\lizadpentry
+\end{dramper}
 
 \endinput
